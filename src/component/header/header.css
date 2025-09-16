@@ -1,0 +1,11 @@
+.container{
+    color: white;
+    margin-top: -50px;
+    h1{
+        font-size: 4rem;
+    }
+}
+
+.scroll__down {
+    text-decoration: none;
+}

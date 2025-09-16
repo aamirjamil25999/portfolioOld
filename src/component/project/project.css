@@ -1,0 +1,54 @@
+.projecthed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    h5{
+        color:  grey;
+    }
+    h2{
+        color:  #4DB5FF;
+    }
+    .cartdiv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        
+        .carts {
+            background-color: #2C2C6C;
+            padding: 20px;
+            height: fit-content;
+            
+            width: 30vw;
+            transition: 0.20s all ease;
+            border-radius: 50px;
+            .cartbody {
+                color: white;
+                .bigeye {
+                    border: 1px solid;
+                    font-size: 2rem;
+                    width: 100px;
+                    background: transparent;
+                    float: inline-end;
+                }
+                .bigeye:hover {
+                    background-color: green;
+                }
+                
+            }
+
+         
+        }
+    }
+    .carts:hover{
+        background-color: transparent;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cartdiv {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
